@@ -3,9 +3,12 @@ https://tailwindcss.com/docs/guides/create-react-app
 
 -create react app
 -configured tailwind css
+-Routing
 -Header
 -Login form
 -Signup form
+-Form validation
+-useRef hook
 
 #Features
 -Login/sign up
@@ -27,3 +30,9 @@ rafce -> react arrow function export component
 mx-auto -> for centering the element
 
 use formik library for form validations
+
+useRef is a React Hook that lets you reference a value that's not needed for rendering
+
+when we use button inside form tag and click on button then automatically onSubmit method get called, thats why page get refreshed to prevent this use 
+onSubmit={(e) => e.preventDefault()}
+
