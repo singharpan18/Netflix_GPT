@@ -26,4 +26,4 @@ rafce -> react arrow function export component
 
 mx-auto -> for centering the element
 
-use formik library for form validation
+use formik library for form validations
