@@ -1,0 +1,29 @@
+visit the below website for tailwind configuration
+https://tailwindcss.com/docs/guides/create-react-app
+
+-create react app
+-configured tailwind css
+-Header
+-Login form
+-Signup form
+
+#Features
+-Login/sign up
+    -sign in/sign up form
+    -redirect to browse page
+-Browse(after authentication)
+    -Header
+    -Main Movie
+        -Trailer in background
+        -Title & Description
+        -Movie Suggestions
+            -MovieList 
+-NetflisGPT
+    -Search background
+    -Movie Suggestions      
+
+rafce -> react arrow function export component  
+
+mx-auto -> for centering the element
+
+use formik library for form validation
