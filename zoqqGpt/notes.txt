@@ -12,6 +12,7 @@ https://tailwindcss.com/docs/guides/create-react-app
 -Firebase setup
 -Deploying our app
 -Create sign up user account
+-Store in redux
 
 #Features
 -Login/sign up
@@ -68,3 +69,14 @@ Install firebase CLI -> npm install -g firebase-tools
 Firebase login -> firebase login
 Initilize firebase -> firebase init, then select host
 Deploy command -> firebase deploy
+
+##Taking pull in another system
+#If not already cloned
+git clone https://github.com/username/repository-name.git
+git pull origin branch-name
+Replace branch-name with the name of the branch you pushed to from the other system (e.g., main, master, or a feature branch).
+
+#If cloned
+cd /path/to/your/repository(going inside folder and open gitbush there)
+git pull origin branch-name
+
