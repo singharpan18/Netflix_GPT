@@ -12,7 +12,9 @@ https://tailwindcss.com/docs/guides/create-react-app
 -Firebase setup
 -Deploying our app
 -Create sign up user account
--Store in redux
+-Created redux store with userSlice
+-As user sign in/ sign up update userSlice -> 51:00 -> We can do this after sucess of each api bt instead of doing there
+tym we use firebase onAuthStateChange API so that we can do in one go.
 
 #Features
 -Login/sign up
