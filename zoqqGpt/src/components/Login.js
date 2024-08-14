@@ -31,7 +31,16 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-        navigate("/browse");
+        updateProfile(user, {
+          displayName: name.current.value,
+          photoURL: "https://as2.ftcdn.net/v2/jpg/06/14/96/05/1000_F_614960515_mQsF7nS1r3qZ9eCHzqJ5cyCxmjsfJOCQ.webp",
+        })
+          .then(() => {
+            navigate("/browse");
+          })
+          .catch((error) => {
+            setErrorMessage(error.message);
+          });
       })
       .catch((error) => {
         const errorCode = error.code;
