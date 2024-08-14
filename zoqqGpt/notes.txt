@@ -17,6 +17,7 @@ https://tailwindcss.com/docs/guides/create-react-app
 tym we use firebase onAuthStateChange API so that we can do in one go.
 -Signout
 -updateuser profile
+-fix the bug after refresh displayname & img is comming ->11:30
 
 #Features
 -Login/sign up

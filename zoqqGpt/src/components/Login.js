@@ -3,7 +3,9 @@ import Header from "./Header";
 import { checkValidData } from "../utilis/validate";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword,updateProfile,} from "firebase/auth";
 import { auth } from "../utilis/firebase";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utilis/userSlice";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -12,6 +14,7 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
@@ -36,6 +39,15 @@ const Login = () => {
           photoURL: "https://as2.ftcdn.net/v2/jpg/06/14/96/05/1000_F_614960515_mQsF7nS1r3qZ9eCHzqJ5cyCxmjsfJOCQ.webp",
         })
           .then(() => {
+            const {uid, email, displayName, photoURL} = auth.currentUser;
+            dispatch(
+              addUser({
+                uid: uid,
+                email: email,
+                displayName: displayName,
+                photoURL: photoURL,
+              })
+            );
             navigate("/browse");
           })
           .catch((error) => {
