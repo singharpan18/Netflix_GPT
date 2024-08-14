@@ -9,6 +9,9 @@ https://tailwindcss.com/docs/guides/create-react-app
 -Signup form
 -Form validation
 -useRef hook
+-Firebase setup
+-Deploying our app
+-Create sign up user account
 
 #Features
 -Login/sign up
@@ -36,3 +39,32 @@ useRef is a React Hook that lets you reference a value that's not needed for ren
 when we use button inside form tag and click on button then automatically onSubmit method get called, thats why page get refreshed to prevent this use 
 onSubmit={(e) => e.preventDefault()}
 
+#For creating web app in firebase
+Visit https://firebase.google.com/
+Get Stared
+Create Web project
+In ur project do npm install firebase
+create a firebase.js file in utilis
+
+#For authentication 
+Go to authentication and add provider
+
+#For deploying
+npm install -g firebase-tools
+powershell -ExecutionPolicy Bypass -Command "firebase login"
+powershell -ExecutionPolicy Bypass -Command "firebase login --no-localhost"
+powershell -ExecutionPolicy Bypass -Command "firebase init"
+select "HOSTING: Configure files for firebase hosting and optionally set up GitHub action deploys"
+Use an existing project
+public directory -> build
+rewrite all urls -> N
+setup automatic deploy -> N
+npm run build
+powershell -ExecutionPolicy Bypass -Command "firebase deploy"
+Congrats u will get the hosting url -> https://netflixgpt-af98e.web.app
+
+#Final steps for deploying
+Install firebase CLI -> npm install -g firebase-tools
+Firebase login -> firebase login
+Initilize firebase -> firebase init, then select host
+Deploy command -> firebase deploy
