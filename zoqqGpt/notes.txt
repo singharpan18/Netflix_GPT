@@ -15,6 +15,7 @@ https://tailwindcss.com/docs/guides/create-react-app
 -Created redux store with userSlice
 -As user sign in/ sign up update userSlice -> 51:00 -> We can do this after sucess of each api bt instead of doing there
 tym we use firebase onAuthStateChange API so that we can do in one go.
+-Signout
 
 #Features
 -Login/sign up
