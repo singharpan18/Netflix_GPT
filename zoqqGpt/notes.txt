@@ -23,7 +23,7 @@ tym we use firebase onAuthStateChange API so that we can do in one go.
 -remove hard code values
 -Regiter TMDB API & create an app & get access token
 -Get Data from TMDB now playing movies list API
-
+-Create movieSlice and store them
 
 #Features
 -Login/sign up
