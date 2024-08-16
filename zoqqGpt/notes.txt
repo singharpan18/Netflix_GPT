@@ -18,6 +18,7 @@ tym we use firebase onAuthStateChange API so that we can do in one go.
 -Signout
 -updateuser profile
 -fix the bug after refresh displayname & img is comming ->11:30
+-bugfix: if the user is not logged in redirect/browse to login page and vice-versa.
 
 #Features
 -Login/sign up
@@ -84,4 +85,9 @@ Replace branch-name with the name of the branch you pushed to from the other sys
 #If cloned
 cd /path/to/your/repository(going inside folder and open gitbush there)
 git pull origin branch-name
+
+#To override your local files with the latest changes from the remote repository, you can force a reset.
+git reset --hard origin/main
+git pull origin main
+
 
