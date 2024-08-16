@@ -24,6 +24,7 @@ tym we use firebase onAuthStateChange API so that we can do in one go.
 -Regiter TMDB API & create an app & get access token
 -Get Data from TMDB now playing movies list API
 -Create movieSlice and store them
+-create custom hooks
 
 #Features
 -Login/sign up
