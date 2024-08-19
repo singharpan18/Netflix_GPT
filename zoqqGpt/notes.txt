@@ -26,6 +26,8 @@ tym we use firebase onAuthStateChange API so that we can do in one go.
 -Create movieSlice and store them
 -create custom hooks
 -creating component for browse component
+-mainContainer completed
+-secondaryContainer  completed
 
 
 #Features
