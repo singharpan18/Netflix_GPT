@@ -28,6 +28,8 @@ tym we use firebase onAuthStateChange API so that we can do in one go.
 -creating component for browse component
 -mainContainer completed
 -secondaryContainer  completed
+-GPT Search page
+-GPT Search pageMulti language feature
 
 
 #Features
