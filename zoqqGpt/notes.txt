@@ -106,3 +106,6 @@ git pull origin main
 Whenever u do API call or while performing most of the action we see everything twice in console, this is only because of the <React.StrictMode>
 </React.StrictMode> in index.js. It is offers by react to check consistency in development mode, this doesn't happen in production mode.
 
+For using open AI api
+create secret key
+npm install --save openai
