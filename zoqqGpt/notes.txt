@@ -30,6 +30,7 @@ tym we use firebase onAuthStateChange API so that we can do in one go.
 -secondaryContainer  completed
 -GPT Search page
 -GPT Search pageMulti language feature
+-Making app responsive
 
 
 #Features
